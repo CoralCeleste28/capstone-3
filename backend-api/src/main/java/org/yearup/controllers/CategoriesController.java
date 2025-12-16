@@ -63,7 +63,7 @@ public class CategoriesController
     public Category addCategory(@RequestBody Category category)
     {
         // insert the category- MAKE SURE TO RETURN CATEGORY IN CREATE CATEGORY IN DAOCLASS
-        return categoryDao.create(Category);
+        return categoryDao.create(category);
     }
 
     // add annotation to call this method for a PUT (update) action - the url path must include the categoryId
@@ -74,7 +74,7 @@ public class CategoriesController
     {
         // update the category by id- CHECK AND UPDATE
         category.setCategoryId(id);
-        categoryDao.update(Category);
+        categoryDao.update(id, category);
     }
 
 
@@ -85,6 +85,6 @@ public class CategoriesController
     public void deleteCategory(@PathVariable int id)
     {
         // delete the category by id- CHECK AND UPDATE
-        categoryDao.delete(Category);
+        categoryDao.delete(id);
     }
 }
