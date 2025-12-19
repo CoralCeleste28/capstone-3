@@ -82,6 +82,7 @@ public class CategoriesController
     public void updateCategory(@PathVariable int id, @RequestBody Category category)
     {
         // update the category by id
+
         category.setCategoryId(id);
         categoryDao.update(id, category);
     }
