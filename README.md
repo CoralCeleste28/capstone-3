@@ -40,4 +40,5 @@ Functional Filter
 ## Interesting Code
 ![Interesting Code.png](Interesting%20Code.png)
 
+I found it interesting that statement was written twice. It is written twice because one is if it is being ignored. The other is to apply the filer, if it is not ignored
 
