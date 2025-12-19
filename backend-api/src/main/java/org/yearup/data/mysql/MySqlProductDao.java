@@ -52,6 +52,7 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
             ResultSet row = statement.executeQuery();
 
             while (row.next())
+
             {
                 Product product = mapRow(row);
                 products.add(product);
