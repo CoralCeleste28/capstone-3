@@ -80,7 +80,7 @@ public class CategoriesController
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public void updateCategory(@PathVariable int id, @RequestBody Category category)
     {
-        // update the category by id- CHECK AND UPDATE
+        // update the category by id
         category.setCategoryId(id);
         categoryDao.update(id, category);
     }
@@ -94,7 +94,7 @@ public class CategoriesController
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteCategory(@PathVariable int id)
     {
-        // delete the category by id- CHECK AND UPDATE
+        // delete the category by id
 
         categoryDao.delete(id);
     }
