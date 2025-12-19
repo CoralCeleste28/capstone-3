@@ -72,6 +72,7 @@ public class CategoriesController
     public Category addCategory(@RequestBody Category category)
     {
         // insert the category- MAKE SURE TO RETURN CATEGORY IN CREATE CATEGORY IN DAOCLASS
+
         return categoryDao.create(category);
     }
 
