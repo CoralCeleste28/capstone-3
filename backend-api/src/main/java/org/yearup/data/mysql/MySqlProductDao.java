@@ -208,8 +208,8 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
             statement.setInt(1, productId);
 
             statement.executeUpdate();
-        }
-        catch (SQLException e)
+
+        } catch (SQLException e)
         {
             throw new RuntimeException(e);
         }
