@@ -52,7 +52,6 @@ public class CategoriesController
         if (category == null){
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
-
         return category;
     }
 
